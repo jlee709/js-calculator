@@ -18,6 +18,7 @@
     add: add,
     subtract: subtract,
     multiply: multiply,
+    divide:divide,
     
 };
  
@@ -94,6 +95,11 @@
    * @param  { Number } x
    */
 
+   function divide(x){
+     validate(x);
+
+     return total /= x;
+   }
 
   /**
    * Return the value stored at `memory`
