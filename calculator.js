@@ -20,6 +20,7 @@
     multiply: multiply,
     divide:divide,
     recallMemory: recallMemory,
+    saveMemory: saveMemory,
     
 };
  
@@ -115,6 +116,11 @@
    * Stores the value of `total` to `memory`
    */
 
+    function saveMemory(){
+      memory = total;
+
+      return total;
+    }
 
   /**
    * Clear the value stored at `memory`
