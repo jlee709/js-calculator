@@ -21,6 +21,7 @@
     divide:divide,
     recallMemory: recallMemory,
     saveMemory: saveMemory,
+    clearMemory:clearMemory,
     
 };
  
@@ -126,6 +127,13 @@
    * Clear the value stored at `memory`
    */
 
+    function clearMemory(){
+    
+
+      memory = 0;
+
+      return memory;
+    }
 
     return calculator;
 
