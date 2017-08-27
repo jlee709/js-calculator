@@ -16,7 +16,7 @@
     load: load,
     getTotal: getTotal,
     add: add,
-    
+    subtract: subtract,
     
 };
  
@@ -63,7 +63,7 @@
    */
    function add(x){
      validate(x);
-     
+
     return total += x;
    }
 
@@ -72,7 +72,11 @@
    * Subtracts the value passed in from `total`
    * @param  { Number } x
    */
+    function subtract(x){
+      validate(x);
 
+      return total -= x;
+    }
 
   /**
    * Multiplies the value by `total`
