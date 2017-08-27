@@ -11,7 +11,9 @@
   var memory = 0;
   var total = 0;
 
-  var calculator = {};
+  return calculator = {
+    load:load
+  };
 
  });
 
@@ -20,6 +22,12 @@
    * @param  { Number } x
    * @return { Number }    current total
    */
+   function load(x){
+    validate(x);
+    total =x;
+
+      return total;
+   }
 
 
 
