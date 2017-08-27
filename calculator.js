@@ -11,11 +11,24 @@
   var memory = 0;
   var total = 0;
 
-  return calculator = {
-    load:load
-  };
-
- });
+  var calculator = {
+    
+    load: load,
+    getTotal: getTotal,
+    
+    
+};
+ 
+ 
+  /**
+   * Validation
+   */
+   
+   function validate(x){ 
+     if (typeof x !== "number"){
+     throw new Error("Input a Number");
+     } 
+ }
 
   /**
    * sets the `total` to the number passed in
@@ -23,7 +36,9 @@
    * @return { Number }    current total
    */
    function load(x){
+    
     validate(x);
+    
     total =x;
 
       return total;
@@ -35,6 +50,10 @@
    * Return the value of `total`
    * @return { Number }
    */
+
+   function getTotal(){
+    return total;
+   }
 
 
   /**
@@ -76,7 +95,9 @@
    * Clear the value stored at `memory`
    */
 
-  /**
-   * Validation
-   */
+
+    return calculator;
+
+   });
+
 
