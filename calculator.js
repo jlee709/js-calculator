@@ -19,6 +19,7 @@
     subtract: subtract,
     multiply: multiply,
     divide:divide,
+    recallMemory: recallMemory,
     
 };
  
@@ -106,6 +107,9 @@
    * @return { Number }
    */
 
+    function recallMemory(){
+      return memory;
+    }
 
   /**
    * Stores the value of `total` to `memory`
