@@ -17,6 +17,7 @@
     getTotal: getTotal,
     add: add,
     subtract: subtract,
+    multiply: multiply,
     
 };
  
@@ -82,7 +83,11 @@
    * Multiplies the value by `total`
    * @param  { Number } x
    */
+    function multiply(x){
+        validate(x);
 
+        return total *= x;
+    }
 
   /**
    * Divides the value passing in by `total`
